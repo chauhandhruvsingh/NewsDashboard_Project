@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { useAuth } from '@/Context/AuthContext'
-import { useNews } from '@/Context/NewsContext'
+import { useNews } from '@/Context/NextContext'
 import Header from '@/components/layout/Header'
 import FilterBar from '@/components/dashboard/FilterBar'
 import NewsCard from '@/components/dashboard/NewsCard'

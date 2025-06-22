@@ -1,7 +1,7 @@
 // src/components/Dashboard/PayoutTable.js
 'use client'
 import { useState } from 'react'
-import { useNews } from '@/context/NewsContext'
+import { useNews } from '@/Context/NextContext'
 import { Edit2, Save, X, DollarSign } from 'lucide-react'
 
 export default function PayoutTable({ articles }) {

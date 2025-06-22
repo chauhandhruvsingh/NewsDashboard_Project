@@ -2,10 +2,10 @@
 // import { createContext, useContext, useState, useEffect } from 'react'
 // import { fetchNewsArticles } from '@/Utils/api'
 
-// const NewsContext = createContext()
+// const NextContext = createContext()
 
 // export const useNews = () => {
-//   const context = useContext(NewsContext)
+//   const context = useContext(NextContext)
 //   if (!context) {
 //     throw new Error('useNews must be used within a NewsProvider')
 //   }
@@ -128,22 +128,22 @@
 //   }
 
 //   return (
-//     <NewsContext.Provider value={value}>
+//     <NextContext.Provider value={value}>
 //       {children}
-//     </NewsContext.Provider>
+//     </NextContext.Provider>
 //   )
 // }
 
 
-// src/context/NewsContext.js
+// src/context/NextContext.js
 'use client'
 import { createContext, useContext, useState, useEffect } from 'react'
 import { fetchNewsArticles } from '@/Utils/api'
 
-const NewsContext = createContext()
+const NextContext = createContext()
 
 export const useNews = () => {
-  const context = useContext(NewsContext)
+  const context = useContext(NextContext)
   if (!context) {
     throw new Error('useNews must be used within a NewsProvider')
   }
@@ -266,8 +266,8 @@ export const NewsProvider = ({ children }) => {
   }
 
   return (
-    <NewsContext.Provider value={value}>
+    <NextContext.Provider value={value}>
       {children}
-    </NewsContext.Provider>
+    </NextContext.Provider>
   )
 }

@@ -1,6 +1,6 @@
 // src/components/Dashboard/FilterBar.js
 'use client'
-import { useNews } from '@/context/NewsContext'
+import { useNews } from '@/context/NextContext'
 import { Search, Filter, Calendar, User, Tag } from 'lucide-react'
 
 export default function FilterBar() {
